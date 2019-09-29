@@ -7,7 +7,6 @@ const express = require('express');
 const moment = require('moment-timezone');
 const bodyParser = require('body-parser');
 const timeout = require('connect-timeout');
-
 const ObjectId = require('mongodb').ObjectId;
 const MongoClient = require('mongodb').MongoClient;
 
@@ -26,36 +25,227 @@ app.use(bodyParser.json());
 const EventEmitter = require('events');
 class MyEmitter extends EventEmitter {}
 
-//const mongo_url = 'mongodb+srv://uhack_db:neropromises@cluster0-jve2f.gcp.mongodb.net/test?retryWrites=true&w=majority';
-
-const db_name = 'bus';
-const mongo_url = 'mongodb://127.0.0.1:27017/uhack_db';
+const mongo_url = 'mongodb+srv://uhack_db:mnl48islove@cluster0-jve2f.gcp.mongodb.net/test?retryWrites=true&w=majority';
+const db_name = 'uhack_db';
 
 var client = new MongoClient(mongo_url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
 
-server.listen(port, () => {
 
-    // io.on('connection', (socket) => {
-    //     socket.on('recceive', (data) => {
+client.connect(error => {
 
-    //     });
-    // });
-
-    console.log(`Server running... @ PORT: ${port}`);
-
-});
-
-
-client.connect(err => {
-    
-    assert.strictEqual(null, err);
+    assert.strictEqual(null, error);
     const db = client.db(db_name);
 
     /* Consider collection checking when error occured at performing query  */
-    const user_col = db.collection('user_client');
+    const bus = db.collection('bus');
+    const stations = db.collection('bus_stations');
+
+    let bs = {
+        
+        "stations": [{
+                "name": "Blue Whale Bus Station",
+                "waiting_count": "3",
+                "category": "near",
+                "location": [{
+                    "lat": "14.587222",
+                    "long": "120.969400"
+                }],
+                "next_routes": [{
+                        "name": "Daily Express Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.589085",
+                            "long": "120.971293"
+                        }]
+                    },
+                    {
+                        "name": "Madrigal Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.592512",
+                            "long": "120.972865"
+                        }]
+                    },
+                    {
+                        "name": "Intendancia Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.593700",
+                            "long": "120.974893"
+                        }]
+                    },
+
+                    {
+                        "name": "Lyceum Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.591889",
+                            "long": "120.977591"
+                        }]
+                    },
+                    {
+                        "name": "Novales Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.589553",
+                            "long": "120.978025"
+                        }]
+                    },
+                    {
+                        "name": "Manila Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.590347",
+                            "long": "120.983165"
+                        }]
+                    }
+                ]
+            },
+            {
+                "name": "White Tiger Bus Station",
+                "waiting_count": "5",
+                "category": "near",
+                "location": [{
+                    "lat": "14.588316",
+                    "long": "120.970644"
+                }],
+                "next_routes": [{
+                        "name": "Daily Express Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.589085",
+                            "long": "120.971293"
+                        }]
+                    },
+                    {
+                        "name": "Madrigal Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.592512",
+                            "long": "120.972865"
+                        }]
+                    },
+                    {
+                        "name": "Intendancia Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.593700",
+                            "long": "120.974893"
+                        }]
+                    },
+
+                    {
+                        "name": "Lyceum Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.591889",
+                            "long": "120.977591"
+                        }]
+                    },
+                    {
+                        "name": "Novales Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.589553",
+                            "long": "120.978025"
+                        }]
+                    },
+                    {
+                        "name": "Manila Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.590347",
+                            "long": "120.983165"
+                        }]
+                    }
+                ]
+            },
+            {
+                "name": "Dragon Bus Station",
+                "waiting_count": "11",
+                "category": "near",
+                "location": [{
+                    "lat": "14.586801",
+                    "long": "120.970686"
+                }],
+                "next_routes": [{
+                        "name": "Daily Express Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.589085",
+                            "long": "120.971293"
+                        }]
+                    },
+                    {
+                        "name": "Madrigal Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.592512",
+                            "long": "120.972865"
+                        }]
+                    },
+                    {
+                        "name": "Intendancia Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.593700",
+                            "long": "120.974893"
+                        }]
+                    },
+
+                    {
+                        "name": "Lyceum Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.591889",
+                            "long": "120.977591"
+                        }]
+                    },
+                    {
+                        "name": "Novales Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.589553",
+                            "long": "120.978025"
+                        }]
+                    },
+                    {
+                        "name": "Manila Bus Station",
+                        "waiting_count": "3",
+                        "category": "near",
+                        "location": [{
+                            "lat": "14.590347",
+                            "long": "120.983165"
+                        }]
+                    }
+                ]
+            }
+        ]
+    };
+
+    stations.insert(bs).then(r =>{
+        console.log(bs);
+    });
 
     /**
      *
@@ -67,5 +257,49 @@ client.connect(err => {
     function checkObjects(obj = {}) {
         return Object.keys(obj).length > 0;
     }
+
+    
+    function getBusList() {
+        return new Promise((resolve, reject) => {
+            bus.find({}).toArray((err, doc) => {
+                !err ? resolve(doc) : reject(err);
+            });
+        });
+    }
+
+    function getNearbyBus() {
+        return new Promise((resolve, reject) => {
+            stations.find({}).toArray((err, doc) => {
+                !err ? resolve(doc) : reject(err);
+            });
+        });
+    }
+
+    server.listen(port, () => {
+        // io.on('connection', (socket) => {
+        //     socket.on('recceive', (data) => {
+
+        //     });
+        // });
+        console.log(`Server running... @ PORT: ${port}`);
+    });
+
+    app.get('/bus', (req, res) => {
+        getBusList().then(resolve => {
+            res.status(200).send(resolve);
+        }).catch(err => {
+            res.status(500).send('err');
+            console.log(err);
+        });
+    });
+
+    app.get('/near_bus', (req, res) => {
+        getNearbyBus().then(resolve => {
+            res.status(200).send(resolve);
+        }).catch(err => {
+            res.status(500).send('err');
+            console.log(err);
+        });
+    });
 
 });

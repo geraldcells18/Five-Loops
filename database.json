@@ -1,3 +1,198 @@
+{
+    "stations": [{
+            "name": "Blue Whale Bus Station",
+            "waiting_count": "3",
+            "category": "near",
+            "location": [{
+                "lat": "14.587222",
+                "long": "120.969400"     
+            }],
+            "next_routes": [{
+                    "name": "Daily Express Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.589085",
+                        "long": "120.971293"
+                    }]
+                },
+                {
+                    "name": "Madrigal Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.592512",
+                        "long": "120.972865"
+                    }]
+                },
+                {
+                    "name": "Intendancia Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.593700",
+                        "long": "120.974893"
+                    }]
+                },
 
+                {
+                    "name": "Lyceum Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.591889",
+                        "long": "120.977591"
+                    }]
+                },
+                {
+                    "name": "Novales Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.589553",
+                        "long": "120.978025"
+                    }]
+                },
+                {
+                    "name": "Manila Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.590347",
+                        "long": "120.983165"
+                    }]
+                }
+            ]
+        },
+        {
+            "name": "White Tiger Bus Station",
+            "waiting_count": "5",
+            "category": "near",
+            "location": [{
+                "lat": "14.588316",
+                "long": "120.970644"
+            }],
+            "next_routes": [{
+                    "name": "Daily Express Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.589085",
+                        "long": "120.971293"
+                    }]
+                },
+                {
+                    "name": "Madrigal Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.592512",
+                        "long": "120.972865"
+                    }]
+                },
+                {
+                    "name": "Intendancia Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.593700",
+                        "long": "120.974893"
+                    }]
+                },
 
+                {
+                    "name": "Lyceum Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.591889",
+                        "long": "120.977591"
+                    }]
+                },
+                {
+                    "name": "Novales Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.589553",
+                        "long": "120.978025"
+                    }]
+                },
+                {
+                    "name": "Manila Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.590347",
+                        "long": "120.983165"
+                    }]
+                }
+            ]
+        },
+        {
+            "name": "Dragon Bus Station",
+            "waiting_count": "11",
+            "category": "near",
+            "location": [{
+                "lat": "14.586801",
+                "long": "120.970686"
+            }],
+            "next_routes": [{
+                    "name": "Daily Express Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.589085",
+                        "long": "120.971293"
+                    }]
+                },
+                {
+                    "name": "Madrigal Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.592512",
+                        "long": "120.972865"
+                    }]
+                },
+                {
+                    "name": "Intendancia Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.593700",
+                        "long": "120.974893"
+                    }]
+                },
 
+                {
+                    "name": "Lyceum Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.591889",
+                        "long": "120.977591"
+                    }]
+                },
+                {
+                    "name": "Novales Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.589553",
+                        "long": "120.978025"
+                    }]
+                },
+                {
+                    "name": "Manila Bus Station",
+                    "waiting_count": "3",
+                    "category": "near",
+                    "location": [{
+                        "lat": "14.590347",
+                        "long": "120.983165"
+                    }]
+                }
+            ]
+        }
+    ]
+}

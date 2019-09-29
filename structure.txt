@@ -1,0 +1,99 @@
+
+<!---------------- BUS STRUCTURE -------------------->
+{
+    "bus_driver": [{
+            "plate_number": "CDB 643",
+            "driver_name": "Noe Bradberry",
+            "available_slots": "0",
+            "capacity": "40"
+        },
+        {
+            "plate_number": "CJA 910",
+            "driver_name": "Vern Wimberley",
+            "available_slots": "0",
+            "capacity": "40"
+        },
+        {
+            "plate_number": "GPE 277",
+            "driver_name": "Jefferey Sartor",
+            "available_slots": "0",
+            "capacity": "40"
+        },
+        {
+            "plate_number": "JBU 994",
+            "driver_name": "Horace Cornelius",
+            "available_slots": "0",
+            "capacity": "40"
+        },
+        {
+            "plate_number": "TTC 381",
+            "driver_name": "Neil Doctor",
+            "available_slots": "0",
+            "capacity": "40"
+        },
+        {
+            "plate_number": "JKQ 192",
+            "driver_name": "Raphael Rentas",
+            "available_slots": "0",
+            "capacity": "40"
+        }, 
+        {
+            "plate_number": "CHQ 970",
+            "driver_name": "Andrea Kopp",
+            "available_slots": "0",
+            "capacity": "40"
+        }, 
+        {
+            "plate_number": "XBN 891",
+            "driver_name": "Lenard Witt",
+            "available_slots": "0",
+            "status": "going",
+            "capacity": "40"
+        }, 
+        {
+            "plate_number": "OPA 340",
+            "driver_name": "Wilbur Wuest",
+            "available_slots": "0",
+            "capacity": "40"
+        }, 
+        {
+            "plate_number": "UUO 144",
+            "driver_name": "Israel Laber",
+            "available_slots": "0",
+            "capacity": "40"
+        }
+    ]
+}
+
+<!---------------- BUS STATION STRUCTURE -------------------->
+
+{
+    "stations": [{
+            "name": "Blue Whale Bus Station",
+            "waiting_count": "3",
+            "category": "near",
+            "location": [{
+                "lat": "14.588316",
+                "long": "120.970644"
+            }]
+        },
+        {
+            "name": "White Tiger Bus Station",
+            "waiting_count": "5",
+            "category": "near",
+            "location": [{
+                "lat": "14.588316",
+                "long": "120.970644"
+            }]
+        },
+        {
+            "name": "Dragon Bus Station",
+            "waiting_count": "11",
+            "category": "near",
+            "location": [{
+                "lat": "14.586801",
+                "long": "120.970686"
+            }]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+<!-- <ion-header>
+    <ion-toolbar>
+      <ion-title>
+   QR Scanner
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content ion-padding>
+  <h1 text-center>Click Button To Scan</h1>
+    <div style="text-align: center;">
+    <ion-button (click)="scanCode()">
+      Scan Code
+    </ion-button> -->
+
+    <!-- <div *ngIf="scannedData">
+      <p>
+        Scanned Code Text : <b>{{ scannedData["text"] }}</b>
+      </p>
+      <p>
+        Scanned Code Format : <b>{{ scannedData["format"] }}</b>
+      </p>
+    </div> -->
+  <!-- </div> -->
+  <!-- </ion-content> --> 
+
+  <ion-header>
+      <ion-toolbar>
+        <ion-title>
+          Transportation
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    
+    <ion-content>
+      <div id='map1'></div>
+      
+      </ion-content>
+      <ion-footer>
+          <div class="centers">
+            <ion-button [disabled]="!back" name="back" id="back" color="tertiary" expand="expand" (click)="presentLoadingWithOptions()">SEARCH</ion-button>
+          </div>
+          <div [hidden]="!selection">
+          <ion-item>
+            <ion-label>Persons</ion-label>
+            <ion-select placeholder="Select One" [(ngModel)]="regAs" (ionChange)="showSelectValue(regAs)">
+              <ion-select-option value="1">1</ion-select-option>
+              <ion-select-option value="2">2</ion-select-option>
+              <ion-select-option value="3">3</ion-select-option>
+              <ion-select-option value="4">4</ion-select-option>
+              <ion-select-option value="5">5</ion-select-option>
+              <ion-select-option value="6">6</ion-select-option>
+              <ion-select-option value="7">7</ion-select-option>
+              <ion-select-option value="8">8</ion-select-option>
+              <ion-select-option value="9">9</ion-select-option>
+              <ion-select-option value="10">10</ion-select-option>
+            </ion-select>
+          </ion-item>
+          </div>
+      </ion-footer>
+      
+
+
+
+  
+  

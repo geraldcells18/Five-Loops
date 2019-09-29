@@ -1,0 +1,32 @@
+
+<ion-content>
+  <!-- <div id="map" style="width:100%; height:100%;"></div> -->
+  <div id='map'></div>
+  </ion-content>
+  <footer>
+    
+   
+      <ion-item>
+          <ion-label>Options</ion-label>
+          <ion-select value="notifications" interface="action-sheet" [(ngModel)]="regAs" (ionChange)="showSelectValue(regAs)">
+            <ion-select-option value="NearbyPolice">Show Nearby Police</ion-select-option>
+            <ion-select-option value="NearbyAmbulance">Show Nearby Ambulance</ion-select-option>
+          </ion-select>
+        </ion-item>
+            <ion-item lines="none">
+                <ion-label>Notify Me When Someone Needs Help.</ion-label>
+                <ion-checkbox color="primary"  slot="start"></ion-checkbox>
+              </ion-item>
+              <div style="text-align: center">
+              <ion-button style="bottom: 0;  display: inline-block;" color="danger" href="/qr">
+                <ion-icon name="call"></ion-icon>Report
+                </ion-button>
+          <ion-button style="bottom: 0;  display: inline-block;" color="danger" (click)="sendSOS()">
+              SOS
+            </ion-button>
+            <ion-button style="bottom: 0;  display: inline-block;" color="danger" (click)="showDirections()" >
+                Show Directions
+              </ion-button>
+            </div>
+  </footer>
+  
